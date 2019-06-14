@@ -73,7 +73,7 @@ application files:
     sudo git clone https://github.com/helluva-87/item_catalog_final.git
 
 **Make sure that all of the working files have the correct filepaths and are
-all in the `/Catalog2` directory so that the Apache2 server and .wsgi
+all in the `/var/www/Catalog2` directory so that the Apache2 server and .wsgi
 files will work!**
 
 
