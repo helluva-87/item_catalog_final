@@ -37,6 +37,7 @@ environment if trying to execute web application.
 
     python3
     python3-pip
+    apache2
     flask
     postgresql
     sqlite
@@ -44,6 +45,51 @@ environment if trying to execute web application.
     sqlalchemy
     libapache2-mod-wsgi-py3
     requests
+
+---
+
+## How To Install & Configure Apache2 server
+
+First login to the server via the command line using this command, and then
+enter the "grader" password of "grader":
+
+    ssh -i [location of "grader" ssh key] grader@54.184.75.80 -p 2200
+
+Then change directories to where the `catalog2.conf` file is located and open
+for editing by using this command:
+
+    sudo nano /etc/apache2/sites-available/catalog2.conf
+
+When you are in the nano editor for the `/etc/apache2/sites-available/catalog2.conf` file, enter this code:
+
+```
+<VirtualHost *:80>
+            ServerName 54.184.75.80
+            ServerAdmin JRLegro@gmail.com
+            WSGIScriptAlias / /var/www/Catalog2/catalog2.wsgi
+            <Directory /var/www/Catalog2/>
+                    Order allow,deny
+                    Allow from all
+            </Directory>
+            Alias /static /var/www/Catalog2/static
+            <Directory /var/www/Catalog2/static/>
+                    Order allow,deny
+                    Allow from all
+            </Directory>
+            Alias /templates /var/www/Catalog2/templates
+            <Directory /var/www/Catalog2/templates/>
+                    Order allow,deny
+                    Allow from all
+            </Directory>
+            ErrorLog ${APACHE_LOG_DIR}/error.log
+            LogLevel warn
+            CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+
+Then save the file by pressing `Control-O` and exit the editor by pressing
+`Control-X`.
+
 
 ---
 
