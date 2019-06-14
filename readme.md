@@ -24,3 +24,24 @@ Note that the SSH port is not default, but has been changed to port 2200.
 This is the only port available for SSH login.
 
 *It is also not possible to login to the server as root for security purposes.*
+
+---
+
+##Dependencies Needed For Web Application To Run##
+
+This is a list of the dependencies needed for the web application to run.
+These dependencies have been installed in the virtual environment used for
+production of this application, but would need to be installed in any other
+environment if trying to execute web application.
+
+python3
+python3-pip
+flask
+postgresql
+sqlite
+oauth2client
+sqlalchemy
+libapache2-mod-wsgi-py3
+requests
+
+---
