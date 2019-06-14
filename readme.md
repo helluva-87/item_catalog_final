@@ -90,6 +90,32 @@ When you are in the nano editor for the `/etc/apache2/sites-available/catalog2.c
 Then save the file by pressing `Control-O` and exit the editor by pressing
 `Control-X`.
 
+## How To Install & Configure .wsgi file
+
+Once logged in to the server, change directories for editing the `.wsgi` file
+by using this command:
+
+      sudo nano /var/www/Catalog2/catalog2.wsgi
+
+Then you should be in the nano editor. Enter this text in that file as you see it here:
+
+    ```
+    #!/usr/bin/python3
+    import sys
+    import logging
+    logging.basicConfig(stream=sys.stderr)
+    sys.path.insert(0,"/var/www/Catalog2")
+
+    from __init__ import app as application
+    # app.secret_key = 'Woosie'
+    ```
+
+Then save the file by pressing `Control-O` and exit the editor by pressing
+`Control-X`.
+
+Restart the Apache2 service by using this command:
+
+    sudo service apache2 restart
 
 ---
 
