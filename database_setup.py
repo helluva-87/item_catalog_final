@@ -1,5 +1,7 @@
+#!/usr/bin/python3
 import os
 import sys
+import flask
 from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
@@ -38,7 +40,7 @@ class Item(Base):
        }
 
 
-engine = create_engine('sqlite:///catalog_database.db')
+engine = create_engine('sqlite:////var/www/catalog2/catalog_database.db')
 
 
 Base.metadata.create_all(engine)

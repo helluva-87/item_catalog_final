@@ -25,9 +25,9 @@ CLIENT_ID = json.loads(
 APPLICATION_NAME = "Item Catalog Application"
 
 
-engine = create_engine('sqlite:////var/www/catalog2/catalog_database.db',
-                       connect_args={'check_same_thread': False},
-                       poolclass=StaticPool)
+engine = create_engine('sqlite:////var/www/catalog2/catalog_database.db'),
+                      connect_args={'check_same_thread': False},
+                      poolclass=StaticPool)
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
@@ -264,7 +264,7 @@ def deleteItem(catalog_id, item_id):
             item=deletedItem)
 
 
-if 'ItemCatalog' == __main__:
+if ItemCatalog == '__main__':
     app.secret_key = "Woosie"
     app.debug = True
     app.run(host='0.0.0.0', port=5000)
