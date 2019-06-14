@@ -49,6 +49,28 @@ environment if trying to execute web application.
 
 ---
 
+## Clone Git Repository And Move Files to Working Directory
+
+First login to the server via the command line using this command, and then
+enter the "grader" password of "grader":
+
+    ssh -i [location of "grader" ssh key] grader@54.184.75.80 -p 2200
+
+Change directories to the `/var/www` directory to clone the application files
+by using this command:
+
+    sudo cd /var/www
+
+Then type this command to clone the repository with all of the working
+application files:
+
+    sudo git clone https://github.com/helluva-87/item_catalog_final.git
+
+**Make sure that all of the working files have the correct filepaths and are
+all in the `/Catalog2` directory so that the Apache2 server and .wsgi
+files will work!**
+
+
 ## How To Install & Configure Apache2 server
 
 First login to the server via the command line using this command, and then
