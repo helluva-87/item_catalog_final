@@ -34,14 +34,14 @@ These dependencies have been installed in the virtual environment used for
 production of this application, but would need to be installed in any other
 environment if trying to execute web application.
 
--python3
--python3-pip
--flask
--postgresql
--sqlite
--oauth2client
--sqlalchemy
--libapache2-mod-wsgi-py3
--requests
+*python3
+*python3-pip
+*flask
+*postgresql
+*sqlite
+*oauth2client
+*sqlalchemy
+*libapache2-mod-wsgi-py3
+*requests
 
 ---
