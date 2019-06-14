@@ -7,10 +7,10 @@ Udacity Full Stack Web Developer Nanodegree.
 
 To access the web application, go to the URI:
 
-    54.184.75.80
+    <54.184.75.80>
 
 This will take you to the homepage of the Item Catalog to view in a Web
-browser!
+browser! The application is served on port 80, for your information.
 
 To access the server via the command line there has been a user of "grader"
 created and set up for use by using this command:
