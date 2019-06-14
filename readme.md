@@ -46,3 +46,5 @@ environment if trying to execute web application.
     requests
 
 ---
+
+## Resources Used For Deployment Of Web Application
