@@ -22,3 +22,5 @@ sudo capabilities, and the only way to login to the server is via SSH key.
 
 Note that the SSH port is not default, but has been changed to port 2200.
 This is the only port available for SSH login.
+
+*It is also not possible to login to the server as root for security purposes.*
