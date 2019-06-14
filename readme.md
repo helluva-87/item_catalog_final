@@ -19,3 +19,6 @@ created and set up for use by using this command:
 
 The password for the "grader" user is "grader". The user "grader" does have
 sudo capabilities, and the only way to login to the server is via SSH key.
+
+Note that the SSH port is not default, but has been changed to port 2200.
+This is the only port available for SSH login.
