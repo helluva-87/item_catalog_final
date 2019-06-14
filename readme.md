@@ -7,7 +7,7 @@ Udacity Full Stack Web Developer Nanodegree.
 
 To access the web application, go to the URI:
 
-    <54.184.75.80>
+    [54.184.75.80](http:54.184.75.80 "John Robert Legro's Web Application")
 
 This will take you to the homepage of the Item Catalog to view in a Web
 browser! The application is served on port 80, for your information.
