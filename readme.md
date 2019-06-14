@@ -27,7 +27,7 @@ This is the only port available for SSH login.
 
 ---
 
-##Dependencies Needed For Web Application To Run##
+##Dependencies Needed For Web Application To Run
 
 This is a list of the dependencies needed for the web application to run.
 These dependencies have been installed in the virtual environment used for
