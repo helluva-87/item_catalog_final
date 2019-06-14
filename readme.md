@@ -45,6 +45,7 @@ environment if trying to execute web application.
     sqlalchemy
     libapache2-mod-wsgi-py3
     requests
+    git
 
 ---
 
