@@ -48,3 +48,7 @@ environment if trying to execute web application.
 ---
 
 ## Resources Used For Deployment Of Web Application
+
+    <https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps>
+
+    <http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/>
