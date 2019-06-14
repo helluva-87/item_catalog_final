@@ -15,6 +15,7 @@ browser!
 To access the server via the command line there has been a user of "grader"
 created and set up for use by using this command:
 
-    ssh -i [location of grader ssh key] grader@54.184.75.80
+    ssh -i [location of "grader" ssh key] grader@54.184.75.80 -p 2200
 
-The password for the "grader" user is "grader".
+The password for the "grader" user is "grader". The user "grader" does have
+sudo capabilities, and the only way to login to the server is via SSH key.
