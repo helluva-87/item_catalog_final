@@ -52,3 +52,5 @@ environment if trying to execute web application.
     <https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps>
 
     <http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/>
+
+    <https://study-hall.udacity.com/conversations/community:conversation:105080404-434038576?contextType=room>
